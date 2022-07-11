@@ -54,14 +54,15 @@ type ConfigConsume struct {
 
 // ConfigPublish is the configuration for the publisher
 type ConfigPublish struct {
-	Exchange      string
-	RoutingKey    string
-	Mandatory     bool
-	Immediate     bool
-	Headers       amqp.Table
-	ContentType   string
-	Priority      uint8
-	CorrelationID string
+	Exchange        string
+	RoutingKey      string
+	Mandatory       bool
+	Immediate       bool
+	Headers         amqp.Table
+	ContentType     string
+	ContentEncoding string
+	Priority        uint8
+	MessageID       string
 }
 
 // NewConfigConsume helper function to create a new ConfigConsume with some default values

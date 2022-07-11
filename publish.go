@@ -19,11 +19,12 @@ func (r *rabbit) Publish(ctx context.Context, body []byte, config ConfigPublish)
 		config.Mandatory,
 		config.Immediate,
 		amqp.Publishing{
-			Headers:       config.Headers,
-			ContentType:   config.ContentType,
-			Priority:      config.Priority,
-			CorrelationId: config.CorrelationID,
-			Body:          body,
+			Headers:         config.Headers,
+			ContentType:     config.ContentType,
+			ContentEncoding: config.ContentEncoding,
+			Priority:        config.Priority,
+			MessageId:       config.MessageID,
+			Body:            body,
 		},
 	)
 	return
