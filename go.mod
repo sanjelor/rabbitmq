@@ -1,4 +1,4 @@
-module github.com/gbeletti/rabbitmq
+module github.com/sanjelor/rabbitmq
 
 go 1.18
 
