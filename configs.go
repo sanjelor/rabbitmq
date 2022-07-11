@@ -82,13 +82,14 @@ func NewConfigConsume(queueName, consumer string) ConfigConsume {
 // NewConfigPublish helper function to create a new ConfigPublish with some default values
 func NewConfigPublish(exchange, routingKey string) ConfigPublish {
 	return ConfigPublish{
-		Exchange:      exchange,
-		RoutingKey:    routingKey,
-		Mandatory:     false,
-		Immediate:     false,
-		Headers:       nil,
-		ContentType:   "",
-		Priority:      0,
-		CorrelationID: "",
+		Exchange:        exchange,
+		RoutingKey:      routingKey,
+		Mandatory:       false,
+		Immediate:       false,
+		Headers:         nil,
+		ContentType:     "",
+		ContentEncoding: "",
+		Priority:        0,
+		MessageID:       "",
 	}
 }

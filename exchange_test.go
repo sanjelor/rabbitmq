@@ -3,7 +3,7 @@ package rabbitmq_test
 import (
 	"testing"
 
-	"github.com/gbeletti/rabbitmq"
+	"github.com/sanjelor/rabbitmq"
 )
 
 func createExchangeTest(t *testing.T, rabbit rabbitmq.ExchangeCreator, exchange, typeExc string) {

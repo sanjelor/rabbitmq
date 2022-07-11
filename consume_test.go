@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gbeletti/rabbitmq"
 	amqp "github.com/rabbitmq/amqp091-go"
+	"github.com/sanjelor/rabbitmq"
 )
 
 func consumeTest(t *testing.T, ctx context.Context, rabbit rabbitmq.Consumer, queue string) (msg string) {

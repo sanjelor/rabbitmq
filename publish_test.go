@@ -4,7 +4,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gbeletti/rabbitmq"
+	"github.com/sanjelor/rabbitmq"
 )
 
 func publishAndConsume(t *testing.T, ctx context.Context, rabbit rabbitmq.RabbitMQ, exchange, queue, msg string) {

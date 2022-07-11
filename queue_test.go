@@ -3,7 +3,7 @@ package rabbitmq_test
 import (
 	"testing"
 
-	"github.com/gbeletti/rabbitmq"
+	"github.com/sanjelor/rabbitmq"
 )
 
 func createQueueTest(t *testing.T, rabbit rabbitmq.QueueCreator, queue string) {

@@ -34,7 +34,7 @@ func TestNewConfigPublish(t *testing.T) {
 		Immediate:       false,
 		Headers:         nil,
 		ContentType:     "",
-		ContentEncoding: "utf-8",
+		ContentEncoding: "",
 		Priority:        0,
 		MessageID:       "",
 	}
